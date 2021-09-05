@@ -1,5 +1,7 @@
-{% block content %}  
-<img id="pic"  src="C:\Users\Balan\Desktop\visual studio code\logo.png">
+{% extends 'base.html' %}
+{% block content %} 
+{% load static %} 
+<img id="pic"  src="{% static 'WebsiteFiles/images/logo.png' %}">
 <div class="list">
 <dl>
     <dt id="name">Repo Name</dt>
