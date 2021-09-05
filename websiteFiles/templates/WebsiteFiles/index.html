@@ -1,7 +1,9 @@
+{% extends 'base.html' %}
 {% block content %}  
 
 <div class="logo">
-    <img src="C:\Users\Balan\Desktop\visual studio code\logo.png">
+    {% load static %}
+    <img src="{% static 'WebsiteFiles/images/logo.png' %}">
     <h3>Welcome dude!</h3>
     <form method="POST" action=".">
         {% csrf_token %}
