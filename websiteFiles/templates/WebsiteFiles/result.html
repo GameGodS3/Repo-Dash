@@ -1,13 +1,12 @@
-{% extends 'base.html' %}
-{% block content %} 
-{% load static %} 
-<img id="pic"  src="{% static 'WebsiteFiles/images/logo.png' %}">
+{% extends 'base.html' %} {% block content %} {% load static %}
+<img id="pic" src="{% static 'WebsiteFiles/images/logo.png' %}" />
 <div class="list">
-<dl>
-    <dt id="name">Repo Name</dt>
-    <dd id="author">-Author Name</dd>
-
-</dl>
+  {% for repo in repo_list %}
+  <dl class="list-element">
+    <a id="name">{{repo.name}}</a>
+    <a id="author">{{repo.author}}</a>
+  </dl>
+  {% endfor %}
 </div>
 <button id="more">Get More Repos</button>
 

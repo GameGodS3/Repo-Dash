@@ -1,11 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .api import search
 
 
 # Function which will show the index.html file
 def index(request):
     if request.method == "POST":
-        return render(request, 'websiteFiles/result.html')
+        return redirect('/result')
 
     return render(request, 'websiteFiles/index.html')
 
