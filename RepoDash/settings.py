@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-=@8-6^^po0gdp5i=h5rdl2#tuh#+ccu6&)h0mhky)%tix7_het
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://repo-dash.herokuapp.com"]
 
 
 # Application definition
