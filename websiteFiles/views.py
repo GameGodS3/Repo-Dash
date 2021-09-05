@@ -12,5 +12,5 @@ def index(request):
 
 # Function which will show the results in result.html file
 def result(request):
-    repo_name_list, repo_author_list = search()
-    return render(request, "websiteFiles/result.html", {"name_list": repo_name_list, "author_list": repo_author_list})
+    repo_list = search()
+    return render(request, "websiteFiles/result.html", {"repo_list": repo_list})
